@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: $backgroundthree;
+  padding: 15px;
+  &__topcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: $title;
+  }
+  &__botcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center; ;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 50px;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      &__first {
+        max-width: 25%;
+        font-size: $subtitle;
+        color: $backgroundtwo;
+        font-weight: bold;
+        @include tablet {
+          color: black;
+          font-weight: unset;
+          font-size: $subtitle-tablet;
+            @include desktop{
+              color: black;
+              font-weight: unset;
+              font-size: $subtitle-desktop;
+            }
+        } 
+      }
+      &__second {
+        max-width: 25%;
+        font-size: $subtitle;
+        color: black;
+        font-weight: unset;
+        @include tablet {
+          color: $backgroundtwo;
+          font-weight: bold;
+          font-size: $subtitle-tablet;
+            @include desktop{
+              color: black;
+              font-weight: unset;
+              font-size: $subtitle-desktop;
+            }
+        } 
+      }
+      &__third {
+        max-width: 25%;
+        font-size: $subtitle;
+        color: black;
+        font-weight: unset;
+        @include tablet {
+          color: black;
+          font-weight: unset;
+          font-size: $subtitle-tablet;
+            @include desktop{
+              color: $backgroundtwo;
+              font-weight: bold;
+              font-size: $subtitle-desktop;
+            }
+        } 
+      }
+    }
+  }
+}

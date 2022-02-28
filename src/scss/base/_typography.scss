@@ -1,0 +1,40 @@
+// Typography
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import "./mixins";
+
+@import "./variables";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 5px 0;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: $title;
+  font-family: 'Redressed', cursive;
+  @include tablet {
+    font-size: $title-tablet;
+  }
+  @include desktop {
+    font-size: $title-desktop;
+  }
+}
+
+h2 {
+  font-size: $subtitle;
+  font-family: 'Redressed', cursive;
+  @include tablet {
+    font-size: $subtitle-tablet;
+  }
+  @include desktop {
+    font-size: $subtitle-desktop;
+  }
+}

@@ -1,0 +1,67 @@
+.section-container {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+        @include desktop{
+            flex-direction:row-reverse;
+        }
+    }
+}
+
+.section-container-reverse {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row-reverse;
+        @include desktop{
+            flex-direction:row;
+        }
+    }
+}
+
+.content-left{
+    display: flex;
+    justify-content: center;
+    max-height: 60%;
+    padding: 20px 0;
+    background-color: $backgroundtwo;
+    @include tablet{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+}
+
+.content-left>img{
+    height: 200px;
+    @include tablet{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: $backgroundtwo;
+    font-size: $paragraph;
+    @include tablet {
+        width: 100%;
+        font-size: $paragraph;
+        @include desktop {
+            font-size: $paragraph-tablet;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $backgroundtwo;
+    }
+}

@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__text {
+        display: flex;
+        justify-content: center;
+        background-color: $backgroundthree;
+        width: 100%;
+
+    }
+    &__icons{
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: $backgroundtwo;
+    
+        &__item {
+            max-width: 25%;
+            display: flex;
+            flex-wrap: wrap;
+
+            
+        }
+    }
+}   
+
+.icon {
+    max-width: 80%;
+    padding: 10px;
+}
